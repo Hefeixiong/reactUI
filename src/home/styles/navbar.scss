@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  background: #fcfbff;
+  height: 64px;
+  border: 1px solid red;
+  > li {
+    margin: 0 50px;
+  }
+  > .logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > .name {
+      margin-left: 10px;
+      color: #0f32e7;
+    }
+  }  
+}
