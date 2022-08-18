@@ -10,9 +10,8 @@ const Navbar = () => {
         </svg>
         <div className="name">ReactUI</div>
       </li>
-      <li className="pro">Product</li>
-      <li className="pri">Pricing</li>
-      <li className="res">Resources</li>
+      <li className="middle">Product</li>
+      <li className="right">Pricing</li>
     </ol>
   );
 };
