@@ -6,10 +6,7 @@ const Main = () => {
     <div className="Wrapper-main">
       <div className="text">
         <h1>Everything you need to grow your business</h1>
-        <p>
-          Protonn does everything you need to start and grow your buisness,
-          Attract clients through engaging video
-        </p>
+        <p>使用react造一个轮子，全程手写，不使用第三方库。</p>
       </div>
       <div className="button">Get Start</div>
       <div className="wrapper-icon">
