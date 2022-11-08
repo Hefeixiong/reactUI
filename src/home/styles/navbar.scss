@@ -17,4 +17,27 @@
       color: #0f32e7;
     }
   }  
+
+  > .user-info {
+    display: flex;
+    flex-direction: row;
+    border-radius: 19px;
+    height:32px;
+    background: rgba(164, 159, 159, 0.3);
+
+   //div里面的内容水平垂直居中
+    > div {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 32px;
+      padding-left: 4px;
+    }
+    > .avatar{
+      border-radius: 50%;
+      width: 32px;
+      background: gold;
+
+    }
+  }
 }

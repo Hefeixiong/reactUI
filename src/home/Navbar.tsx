@@ -10,8 +10,13 @@ const Navbar = () => {
         </svg>
         <div className="name">ReactUI</div>
       </li>
-      <li className="middle">Product</li>
-      <li className="right">Pricing</li>
+
+      <li className="middle">我的官网</li>
+
+      <li className="user-info">
+        <div className="avatar">xxx</div>
+        <div>username</div>
+      </li>
     </ol>
   );
 };
