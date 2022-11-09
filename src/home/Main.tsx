@@ -9,7 +9,7 @@ const Main = () => {
         <h1>Everything you need to grow your business</h1>
         <p>使用react造一个轮子，全程手写，不使用第三方库。</p>
       </div>
-      <Link to={"/doc"}>
+      <Link to={"/doc/userinfo"}>
         <div className="button">Get Start</div>
       </Link>
       <div className="wrapper-icon">

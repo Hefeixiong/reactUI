@@ -29,12 +29,12 @@ function Sidebar() {
         <div className="divider"></div>
 
         <div className="item-groups">
-          <div className="first-item">
+          <Link className="first-item" to={"/doc/notes"}>
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-wenjianjia"></use>
             </svg>
             <span>文档</span>
-          </div>
+          </Link>
         </div>
 
         <div className="divider"></div>
