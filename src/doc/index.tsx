@@ -11,7 +11,9 @@ function doc() {
       <Navbar />
       <div className="main-wrapper">
         <Sidebar />
-        <div className="main-solt">sfsdfsdfsd</div>
+        <div className="main-solt">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
