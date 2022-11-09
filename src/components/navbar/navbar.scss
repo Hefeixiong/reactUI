@@ -8,26 +8,21 @@
   align-items: center;
   justify-content: space-between;
   font-weight: bolder;
-  background: #fcfbff;
+  background: #fcfbff; 
   height: 64px;
-  > li {
+  > a > li {
     margin: 0 50px;
-  }
-  > .logo-name {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    > .name {
-      margin-left: 10px;
-      color: #0f32e7;
-    }
-  }  
-
+  }
+  
   > .user-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 19px;
+    margin: 0 50px;
     height:32px;
     width: 96px;
     background: rgba(164, 159, 159, 0.3);

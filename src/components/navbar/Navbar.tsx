@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 function Navbar() {
@@ -9,12 +10,14 @@ function Navbar() {
   return (
     <div className="navbar-wrapper">
       <ol className="navbar">
-        <li className="logo-name">
-          <svg className="icon" aria-hidden="true">
-            <use xlinkHref="#icon-main"></use>
-          </svg>
-          <div className="name">Hefx</div>
-        </li>
+        <Link className="i" to={"/"}>
+          <li className="logo-name">
+            <svg className="icon" aria-hidden="true">
+              <use xlinkHref="#icon-main"></use>
+            </svg>
+            <div className="name">Hefx</div>
+          </li>
+        </Link>
 
         <li className="middle">我的官网</li>
 

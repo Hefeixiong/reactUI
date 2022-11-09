@@ -13,18 +13,19 @@
     justify-content: center;
     align-items: center;
   }
-  > .button {
-    color: white;
-    border-radius: 4px;
-    background: #0e33ec;
-    padding: 6px;
-    margin: 12px 0;
-  }
 
   > .wrapper-icon {
     > svg {
       width: 64px;
       height: 64px;
     }
+  }
+
+  .button {
+    color: white;
+    border-radius: 4px;
+    background: #0e33ec;
+    padding: 6px;
+    margin: 12px 0;
   }
 }

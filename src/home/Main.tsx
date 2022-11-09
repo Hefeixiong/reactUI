@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/main.scss";
 
 const Main = () => {
@@ -8,7 +9,9 @@ const Main = () => {
         <h1>Everything you need to grow your business</h1>
         <p>使用react造一个轮子，全程手写，不使用第三方库。</p>
       </div>
-      <div className="button">Get Start</div>
+      <Link to={"/doc"}>
+        <div className="button">Get Start</div>
+      </Link>
       <div className="wrapper-icon">
         <svg aria-hidden="true">
           <use xlinkHref="#icon-React"></use>
