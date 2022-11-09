@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/navbar.scss";
 
-const Navbar = () => {
+function Navbar() {
+  const [menuVisible, setmeunVisible] = useState(Boolean);
+  const OpneMenu = () => {
+    setmeunVisible(!menuVisible);
+  };
   return (
     <div className="navbar-wrapper">
       <ol className="navbar">
@@ -16,38 +20,40 @@ const Navbar = () => {
 
         <li className="user-info">
           <div className="avatar">xxx</div>
-          <div className="username">
+          <div className="username" onClick={OpneMenu}>
             <span>hefx</span>
             <svg className="icon-dowm" aria-hidden="true">
               <use xlinkHref="#icon-down"></use>
             </svg>
           </div>
-          <ol className="menu-wrapper">
-            <div className="items">
-              <svg className="icon" aria-hidden="true">
-                <use xlinkHref="#icon-user-fill"></use>
-              </svg>
-              <span>用户中心</span>
-            </div>
-            <div className="divider"></div>
-            <div className="items">
-              <svg className="icon" aria-hidden="true">
-                <use xlinkHref="#icon-yuyan"></use>
-              </svg>
-              <span> 切换语言 </span>
-            </div>
-            <div className="divider"></div>
-            <div className="items">
-              <svg className="icon" aria-hidden="true">
-                <use xlinkHref="#icon-tuichuzhuxiao"></use>
-              </svg>
-              <span> 注销 </span>
-            </div>
-          </ol>
+          {menuVisible ? (
+            <ol className="menu-wrapper ">
+              <div className="items">
+                <svg className="icon" aria-hidden="true">
+                  <use xlinkHref="#icon-user-fill"></use>
+                </svg>
+                <span>用户中心</span>
+              </div>
+              <div className="divider"></div>
+              <div className="items">
+                <svg className="icon" aria-hidden="true">
+                  <use xlinkHref="#icon-yuyan"></use>
+                </svg>
+                <span> 切换语言 </span>
+              </div>
+              <div className="divider"></div>
+              <div className="items">
+                <svg className="icon" aria-hidden="true">
+                  <use xlinkHref="#icon-tuichuzhuxiao"></use>
+                </svg>
+                <span> 注销 </span>
+              </div>
+            </ol>
+          ) : null}
         </li>
       </ol>
     </div>
   );
-};
+}
 
 export default Navbar;
