@@ -20,6 +20,10 @@ function Intor() {
           </div>
           <div className="right">您已经创建1天了</div>
         </div>
+
+        <div className="user-skill">
+          <p>vue React</p>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 .userinfo-wrapper {
 
   > .user-intor {
+    display: flex;
+    flex-direction: column;
     margin-top: 32px;
     height: 154px;
     border-radius: 8px;
-    background: hsla(0,0%,100%,.7);
+    background: hsla(0,0%,100%,1);
     backdrop-filter: blur(6px);
 
     > .user-content{
@@ -42,14 +44,21 @@
         } 
       }
       > .right {
-      border: 1px solid gold;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 32px;
       }
     }
+   
+    > .user-skill {
+      background-color: hsla(216,7%,59%,.3);
+      height: 56px;
+      padding-left: 24px;
+      padding-top: 18px;
+      border-radius: 0 0 8px 8px;
+      backdrop-filter: blur(1px);
+    }
   }
-  > .main-notic {
-    height: 56px;
-    padding-left: 24px;
-    padding-top: 18px;
-    border-radius: 0 0 8px 8px;
-  }
+  
 }

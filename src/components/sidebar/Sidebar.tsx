@@ -7,15 +7,10 @@ function Sidebar() {
     <div className="sidebar-warpper">
       <div className="items-wrapper">
         <div className="item-groups">
-          <div className="first-item">
+          <Link className="first-item" to="/doc/userinfo">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-gailan"></use>
             </svg>
-            <span>概览</span>
-          </div>
-          <div className="divider"></div>
-
-          <Link className="second-item" to="/doc/userinfo">
             <span>个人中心</span>
           </Link>
         </div>
