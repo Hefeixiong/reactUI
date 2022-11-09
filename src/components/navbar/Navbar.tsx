@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/navbar.scss";
+import "./navbar.scss";
 
 function Navbar() {
   const [menuVisible, setmeunVisible] = useState(Boolean);
@@ -13,7 +13,7 @@ function Navbar() {
           <svg className="icon" aria-hidden="true">
             <use xlinkHref="#icon-main"></use>
           </svg>
-          <div className="name">ReactUI</div>
+          <div className="name">Hefx</div>
         </li>
 
         <li className="middle">我的官网</li>
