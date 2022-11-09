@@ -1,0 +1,28 @@
+.sidebar-warpper {
+  width: 200px;
+  border: 1px solid #dcdfe6;
+
+  > .items-wrapper {
+    display: flex;
+    padding: 8px 0;
+    flex-direction: column;
+
+    > .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      > .icon {
+        margin: 0 8px;
+      }
+    }
+
+    > .divider {
+      background: #dcdfe6;
+      height: 1px;
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+
+}

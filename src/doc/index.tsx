@@ -8,9 +8,11 @@ import "./index.scss";
 function doc() {
   return (
     <div className="content-wrapper">
-      {/* <Navbar /> */}
-      <Sidebar />
-      <Outlet></Outlet>
+      <Navbar />
+      <div className="main-wrapper">
+        <Sidebar />
+        <div className="main-solt">sfsdfsdfsd</div>
+      </div>
     </div>
   );
 }
