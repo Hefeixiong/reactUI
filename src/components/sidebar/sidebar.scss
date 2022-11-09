@@ -2,27 +2,49 @@
   width: 200px;
   border: 1px solid #dcdfe6;
 
+
   > .items-wrapper {
     display: flex;
     padding: 8px 0;
     flex-direction: column;
 
-    > .item {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
 
-      > .icon {
-        margin: 0 8px;
+    > .item-groups {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+
+      > .first-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+
+        > .icon {
+          margin: 0 8px;
+        }
       }
+
+      > .second-item {
+        font-size: 12px;
+        padding-left: 44px;
+        width: 100%;
+
+
+
+      }
+      
     }
 
-    > .divider {
-      background: #dcdfe6;
+     .divider {
+      background: #e2e2e7;
       height: 1px;
       width: 100%;
       margin: 8px 0;
     }
   }
 
+  
 }
