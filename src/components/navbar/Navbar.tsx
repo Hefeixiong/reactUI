@@ -7,18 +7,17 @@ function Navbar() {
   const OpneMenu = () => {
     setmeunVisible(!menuVisible);
   };
+  const xx = "sss";
   return (
     <div className="navbar-wrapper">
-      <ol className="navbar">
+      <div className="navbar">
         <Link className="i" to={"/"}>
           <li className="logo-name">
             <svg className="icon" aria-hidden="true">
-              <use xlinkHref="#icon-main"></use>
+              <use xlinkHref="#icon-chengxuyuan-icon"></use>
             </svg>
-            <div className="name">Hefx</div>
           </li>
         </Link>
-
         <li className="middle">我的官网</li>
 
         <li className="user-info">
@@ -42,7 +41,7 @@ function Navbar() {
                 <svg className="icon" aria-hidden="true">
                   <use xlinkHref="#icon-yuyan"></use>
                 </svg>
-                <span> 切换语言 </span>
+                <span> 切换语</span>
               </div>
               <div className="divider"></div>
               <div className="items">
@@ -54,7 +53,7 @@ function Navbar() {
             </ol>
           ) : null}
         </li>
-      </ol>
+      </div>
     </div>
   );
 }

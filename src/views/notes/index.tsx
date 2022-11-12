@@ -19,7 +19,7 @@ function Notes() {
             <div className="item-content">
               <div className="item-id">{item}</div>
               <div className="item-date">2022-11-12</div>
-              <div className="item-context">内容 {+item}</div>
+              <div className="item-context">标题 {+item}</div>
               <div className="item-action">
                 <div>查看</div>
                 <div>删除</div>
