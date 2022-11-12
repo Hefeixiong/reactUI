@@ -1,26 +1,21 @@
-import React, { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import Index from "./md/index";
+import React from "react";
+import "./index.scss";
 
 function Notes() {
-  const [markdown, setMarkdown] = useState(``);
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-      setMarkdown(xmlhttp.responseText);
-    }
-  };
-
-  // 文件目录在 public/static/test.md 这里不需要写 public 因为打包之后没有此目录。
-  xmlhttp.open("GET", "/md/test.md", true);
-  xmlhttp.send();
-  console.log(xmlhttp);
-
+  const tableMap = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
-    <div>
-      <Index />
-      <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
+    <div className="note-content">
+      <div className="title"> 标题 </div>
+      <div className="table-content">
+        {tableMap.map((item) => (
+          <li key={item}>
+            <div>序号</div>
+            <div>内容</div>
+            <div>操作</div>
+          </li>
+        ))}
+      </div>
+      <div className="footer"> 翻页</div>
     </div>
   );
 }

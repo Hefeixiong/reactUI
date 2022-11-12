@@ -1,0 +1,27 @@
+.note-content {
+  margin: 90px 32px;
+  background: hsla(0,0%,100%,1);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+
+
+
+  > .title {
+    border: 1px solid black;
+
+  }
+
+  > .table-content{
+    border: 1px solid yellow;
+
+    > li {
+      display: flex;
+    }
+
+  }
+
+  > .footer{
+    border: 1px solid green;
+
+  }
+}

@@ -1,23 +1,25 @@
-import React from "react";
-import fs from "fs";
-import path from "path";
+import React, { useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 function Index() {
-  const url = "./";
-  const readFile = () => {
-    fs.readdir("./", (err, file) => {
-      if (err) throw err;
-      file.forEach((file) => {
-        let fPath = path.join("./", file);
-        fs.stat(fPath, (err, stat) => {
-          if (stat.isFile()) {
-            console.log(file);
-          }
-        });
-      });
-    });
-    console.log("hi");
+  const [markdown, setMarkdown] = useState(``);
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+      setMarkdown(xmlhttp.responseText);
+    }
   };
-  return <div onClick={readFile}>sss</div>;
+
+  // 文件目录在 public/static/test.md 这里不需要写 public 因为打包之后没有此目录。
+  xmlhttp.open("GET", "/md/test.md", true);
+  xmlhttp.send();
+  console.log(xmlhttp);
+
+  return (
+    <div>
+      <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
+    </div>
+  );
 }
 export default Index;
