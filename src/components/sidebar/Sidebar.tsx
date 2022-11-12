@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Divider from "../divider";
 import "./sidebar.scss";
 
 function Sidebar() {
@@ -15,7 +16,7 @@ function Sidebar() {
           </Link>
         </div>
 
-        <div className="divider"></div>
+        <Divider />
 
         <div className="item-groups">
           <div className="first-item">
@@ -26,7 +27,7 @@ function Sidebar() {
           </div>
         </div>
 
-        <div className="divider"></div>
+        <Divider />
 
         <div className="item-groups">
           <Link className="first-item" to={"/doc/notes"}>
@@ -37,7 +38,7 @@ function Sidebar() {
           </Link>
         </div>
 
-        <div className="divider"></div>
+        <Divider />
 
         <div className="item-groups">
           <div className="first-item">

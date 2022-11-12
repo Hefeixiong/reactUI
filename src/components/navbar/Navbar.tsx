@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Divider from "../divider";
 import "./navbar.scss";
 
 function Navbar() {
@@ -35,14 +36,14 @@ function Navbar() {
                 </svg>
                 <span>用户中心</span>
               </div>
-              <div className="divider"></div>
+              <Divider />
               <div className="items">
                 <svg className="icon" aria-hidden="true">
                   <use xlinkHref="#icon-yuyan"></use>
                 </svg>
                 <span> 切换语</span>
               </div>
-              <div className="divider"></div>
+              <Divider />
               <div className="items">
                 <svg className="icon" aria-hidden="true">
                   <use xlinkHref="#icon-tuichuzhuxiao"></use>
