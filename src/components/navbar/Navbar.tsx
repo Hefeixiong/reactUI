@@ -7,7 +7,6 @@ function Navbar() {
   const OpneMenu = () => {
     setmeunVisible(!menuVisible);
   };
-  const xx = "sss";
   return (
     <div className="navbar-wrapper">
       <div className="navbar">

@@ -23,6 +23,11 @@ function Intor() {
 
         <div className="user-skill">
           <p>vue React</p>
+          <a className="link" href="https://github.com/Hefeixiong">
+            <svg className="icon" aria-hidden="true">
+              <use xlinkHref="#icon-github-fill"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
