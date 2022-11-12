@@ -1,4 +1,5 @@
 import React from "react";
+import Divider from "../../components/divider";
 import "./index.scss";
 
 function Notes() {
@@ -9,9 +10,12 @@ function Notes() {
       <div className="table-content">
         {tableMap.map((item) => (
           <li key={item}>
-            <div>序号</div>
-            <div>内容</div>
-            <div>操作</div>
+            <div>
+              <div>序号</div>
+              <div>内容</div>
+              <div>操作</div>
+            </div>
+            <Divider />
           </li>
         ))}
       </div>
