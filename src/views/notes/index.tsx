@@ -6,17 +6,27 @@ function Notes() {
   const tableMap = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="note-content">
-      <div className="title"> 标题 </div>
+      <div className="title">
+        <div className="id">序号</div>
+        <div className="date">创建时间</div>
+        <div className="name">标题</div>
+        <div className="action">操作</div>
+      </div>
+      <Divider />
       <div className="table-content">
         {tableMap.map((item) => (
-          <li key={item}>
-            <div>
-              <div>序号</div>
-              <div>内容</div>
-              <div>操作</div>
+          <div key={item}>
+            <div className="item-content">
+              <div className="item-id">{item}</div>
+              <div className="item-date">2022-11-12</div>
+              <div className="item-context">内容 {+item}</div>
+              <div className="item-action">
+                <div>查看</div>
+                <div>删除</div>
+              </div>
             </div>
             <Divider />
-          </li>
+          </div>
         ))}
       </div>
       <div className="footer"> 翻页</div>

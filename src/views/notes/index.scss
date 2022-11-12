@@ -1,5 +1,5 @@
 .note-content {
-  margin: 90px 32px;
+  margin: 32px;
   background: hsla(0,0%,100%,1);
   backdrop-filter: blur(6px);
   border-radius: 8px;
@@ -7,21 +7,54 @@
 
 
   > .title {
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 6px 0 6px;
+    font-weight: bolder;
 
+
+
+    > .id {
+      flex: 1;
+    }
+    > .date {
+      flex: 1;
+    }
+    > .name {
+      flex: 2;
+    }
+    > .action {
+      flex: 1;
+    }
   }
 
   > .table-content{
-    border: 1px solid yellow;
 
-    > li > div {
+    > div > .item-content {
       display: flex;
+      justify-content: space-between;
+      padding: 0 6px;
+
+      > .item-id {
+        flex: 1;
+      }
+      > .item-context {
+        flex: 2;
+      }
+      > .item-date{
+        flex:1;
+      }
+      > .item-action{
+        flex:1;
+        display: flex;
+      }
     }
 
   }
 
   > .footer{
-    border: 1px solid green;
+    display: flex;
+    justify-content: center;
 
   }
 }
