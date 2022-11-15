@@ -41,7 +41,7 @@ function Navbar() {
                 <svg className="icon" aria-hidden="true">
                   <use xlinkHref="#icon-yuyan"></use>
                 </svg>
-                <span> 切换语</span>
+                <span> 切换语言</span>
               </div>
               <Divider />
               <div className="items">

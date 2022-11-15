@@ -14,7 +14,6 @@ function Index() {
   // 文件目录在 public/md/test.md 这里不需要写 public 因为打包之后没有此目录。
   xmlhttp.open("GET", "/md/test.md", true);
   xmlhttp.send();
-  console.log(xmlhttp);
 
   return (
     <div>
