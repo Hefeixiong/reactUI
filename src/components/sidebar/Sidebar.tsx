@@ -19,12 +19,12 @@ function Sidebar() {
         <Divider />
 
         <div className="item-groups">
-          <div className="first-item">
+          <Link className="first-item" to="/doc/codeview">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-zujian"></use>
             </svg>
             <span>组件</span>
-          </div>
+          </Link>
         </div>
 
         <Divider />
