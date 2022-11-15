@@ -78,11 +78,13 @@
         align-content: center;
         align-items: center;
        > .icon {
-        height: 20px;
-        width: 20px;
+        margin-left: 6px;
+        height: 16px;
+        width: 16px;
       }
       > span {
         margin-left: 6px;
+        font-size: 12px;
       }
     }
     
