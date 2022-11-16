@@ -4,7 +4,7 @@ import Home from "./home/Index";
 import Doc from "./doc/index";
 import UserInfo from "./views/userIfno";
 import Notes from "./views/notes";
-import CodeView from "./views/modules";
+import ButtonDemo from "./views/modules/buttonDemo";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="doc" element={<Doc />}>
           <Route path="userinfo" element={<UserInfo />} />
           <Route path="notes" element={<Notes />} />
-          <Route path="codeview" element={<CodeView />} />
+          <Route path="buttonDemo" element={<ButtonDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
