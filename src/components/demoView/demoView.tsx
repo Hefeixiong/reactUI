@@ -9,7 +9,8 @@ function DemoView(props: any) {
   const onShow = () => {
     setisShow(!isShow);
   };
-  console.log(props);
+
+  console.log(props.children);
   return (
     <div className="view-wrapper">
       <h1>{props.title}</h1>
@@ -24,7 +25,7 @@ function DemoView(props: any) {
       </div>
       <div className={"demoView " + isShow}>
         <SyntaxHighlighter language="javascript" style={rainbow}>
-          {`<Button text={"xxx"} type="warn" />`}
+          {Divder.toString()}
         </SyntaxHighlighter>
       </div>
     </div>
