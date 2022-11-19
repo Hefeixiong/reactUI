@@ -4,19 +4,21 @@
   padding: 12px 8px;
 
   > .demo {
-    margin: 4px;
     padding: 12px 0;
 
   }
   
   > .demoShow {
-    margin: 4px;
+    padding: 4px;
   }
 
   > .demoView {
-    margin: 4px;
+    padding: 4px;
     > pre {
      border-radius: 4px;
+     > code{
+      overflow-x: auto;
+     }
     }
   }
 

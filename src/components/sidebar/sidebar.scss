@@ -1,14 +1,9 @@
-.sidebar-warpper {
-  width: 200px;
-  height: 90vh;
-  border: 1px solid #dcdfe6;
-  background: #fcfbff;
-
-
-  > .items-wrapper {
+.items-wrapper {
     display: flex;
-    padding: 8px 0;
     flex-direction: column;
+    width: 200px;
+    padding-top: 8px;
+    background: #fcfbff;
 
 
     > .item-groups {
@@ -45,5 +40,4 @@
     
   }
 
-  
-}
+
