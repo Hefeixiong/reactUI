@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/button/Button";
 import DemoView from "../../components/demoView/demoView";
 
-import { colorDemo, loadingDemo } from "./static/index";
+import { colorDemo, loadingDemo, disabledDemo } from "./static/index";
 
 const ButtonDemo = () => {
   return (
@@ -11,6 +11,11 @@ const ButtonDemo = () => {
         <Button title="button" type="dafault" />
         <Button title="button" type="warn" />
         <Button title="button" type="primary" />
+      </DemoView>
+
+      <DemoView intor="支持disabled" demo={disabledDemo}>
+        <Button title="button" type="dafault" disabled />
+        <Button title="button" type="dafault" />
       </DemoView>
 
       <DemoView intor="支持显示加载中" demo={loadingDemo}>
