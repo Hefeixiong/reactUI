@@ -21,6 +21,19 @@ $grey: grey;
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
+
+  > .button-loadingIndicator {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 8px;
+    border-color: #40a9ff #40a9ff #40a9ff transparent;
+    border-style: solid;
+    border-width: 2px;
+    animation: 1s linear infinite loading-span;
+
+  }
 }
 
 .warn {
@@ -33,4 +46,13 @@ $grey: grey;
 
 .primary {
   background: #1890ff;
+}
+
+@keyframes loading-span {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }

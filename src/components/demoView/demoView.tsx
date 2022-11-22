@@ -10,6 +10,7 @@ function DemoView(props: any) {
   const onShow = () => {
     setisShow(!isShow);
   };
+
   return (
     <div className="view-wrapper" style={{ marginBottom: "24px" }}>
       <h1>{props.intor}</h1>

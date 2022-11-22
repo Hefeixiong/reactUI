@@ -5,10 +5,11 @@
 
   > .demo {
     padding: 12px 0;
+    display: flex;
+    align-content: center;
 
     > * {
       margin: 0 8px;
-      padding: 0 12px
     }
 
   }
