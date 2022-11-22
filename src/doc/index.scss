@@ -1,6 +1,6 @@
 .content-wrapper {
   display: flex;
-  height: 100vh;
+  flex: 1;
   flex-direction: column;
   background: rgb(226,237,238);
   background: linear-gradient(229deg, rgba(226,237,238,1) 0%, rgba(230,237,208,1) 50%, rgba(172,232,226,1) 100%);

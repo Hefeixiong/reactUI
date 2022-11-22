@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+#root {
+  height: 100vh;
+  display: flex;
+}
+
 body {
   font-size: 14px;
   // 为什么这样写 font-family
