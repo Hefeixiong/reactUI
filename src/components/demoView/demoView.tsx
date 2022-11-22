@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { rainbow } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Button from "../button/Button";
 import Divder from "../divider/index";
 import "./index.scss";
 
@@ -10,17 +11,16 @@ function DemoView(props: any) {
     setisShow(!isShow);
   };
   return (
-    <div className="view-wrapper">
-      <h1>{props.title}</h1>
+    <div className="view-wrapper" style={{ marginBottom: "24px" }}>
+      <h1>{props.intor}</h1>
       <Divder />
-      <h2>{props.intor}</h2>
       <div className="demo">{props.children}</div>
       <Divder />
       <div className="demoShow">
         {!isShow ? (
-          <button onClick={onShow}>显示代码</button>
+          <Button title="显示代码" type="dafault" onClick={onShow} />
         ) : (
-          <button onClick={onShow}>隐藏代码</button>
+          <Button title="隐藏代码" type="dafault" onClick={onShow} />
         )}
       </div>
       <div className={"demoView " + isShow}>
