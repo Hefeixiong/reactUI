@@ -9,11 +9,11 @@ function DemoView(props: any) {
   const onShow = () => {
     setisShow(!isShow);
   };
-
-  console.log(props.children);
   return (
     <div className="view-wrapper">
       <h1>{props.title}</h1>
+      <Divder />
+      <h2>{props.intor}</h2>
       <div className="demo">{props.children}</div>
       <Divder />
       <div className="demoShow">
@@ -25,7 +25,7 @@ function DemoView(props: any) {
       </div>
       <div className={"demoView " + isShow}>
         <SyntaxHighlighter language="javascript" style={rainbow}>
-          {Divder.toString()}
+          {props.demo}
         </SyntaxHighlighter>
       </div>
     </div>
